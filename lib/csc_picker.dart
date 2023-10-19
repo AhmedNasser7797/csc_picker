@@ -837,25 +837,25 @@ class CSCPickerState extends State<CSCPicker> {
                 ],
               )
             : Column(
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget>[
-                      Expanded(child: countryDropdown()),
-                      widget.showStates
-                          ? SizedBox(
-                              width: 10.0,
-                            )
-                          : Container(),
-                      widget.showStates
-                          ? Expanded(child: stateDropdown())
-                          : Container(),
-                    ],
-                  ),
+                children: [countryDropdown(),
+                  // Row(
+                  //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  //   children: <Widget>[
+                  //     Expanded(child: countryDropdown()),
+                  //     widget.showStates
+                  //         ? SizedBox(
+                  //             width: 10.0,
+                  //           )
+                  //         : Container(),
+                  //     widget.showStates
+                  //         ? Expanded(child: stateDropdown())
+                  //         : Container(),
+                  //   ],
+                  // ),
                   SizedBox(
-                    height: 10.0,
+                    height: 12.0,
                   ),
-                  widget.showStates && widget.showCities
+                  widget.showCities
                       ? cityDropdown()
                       : Container()
                 ],
