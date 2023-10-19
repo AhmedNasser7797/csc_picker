@@ -862,7 +862,7 @@ class CSCPickerState extends State<CSCPicker> {
                   SizedBox(
                     height: 12.0,
                   ),
-                  widget.showCities ? cityDropdown() : Container()
+                  widget.showStates ? stateDropdown() : Container()
                 ],
               ),
       ],
